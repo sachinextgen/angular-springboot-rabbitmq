@@ -6,4 +6,6 @@ COPY ${JAR_FILE} springBootRabbitMq.jar
 EXPOSE 8080
 
 # Command to run the JAR file
-ENTRYPOINT ["java", "-jar", "springBootRabbitMq.jar"]
+ENTRYPOINT ["java", "-jar", "/springBootRabbitMq.jar"]
+
+# docker build -t sachinextgen/springbootrabbitmq:0.0.1 .
